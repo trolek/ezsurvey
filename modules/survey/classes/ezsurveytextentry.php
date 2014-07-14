@@ -49,7 +49,7 @@ class eZSurveyTextEntry extends eZSurveyEntry
         }
         $user = eZUser::instance();
         $value = $this->Default;
-        if ( $user->isLoggedIn() === true )
+        if ( $this->Text3 && $user->isLoggedIn() )
         {
             switch ( $this->Text3 )
             {
